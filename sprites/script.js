@@ -15,9 +15,15 @@ function setup() {
 
   spr1.velocity.y = 1;
 
-  spr1.position.x = width / 2;
-  spr1.position.y = height / 2;
+  spr1.position.x = 0;
+  spr1.position.y = 0;
   spr1.maxSpeed = 5;
+
+  spr2 = createSprite(0, 0, 100, 100);
+  spr2.shapeColor = color("red");
+
+  spr2.position.x = width / 2;
+  spr2.position.y = height / 2;
 }
 
 function draw() {
@@ -29,5 +35,5 @@ function draw() {
   } else {
     spr1.setSpeed(0);
   }
-
+  spr1.collide(spr2);
 }
