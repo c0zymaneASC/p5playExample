@@ -3,7 +3,7 @@
 var spaceShip;
 var astroid;
 var bkg;
-var colideCount = 0;
+var collideCount = 0;
 
 function preload() {
 }
