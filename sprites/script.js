@@ -35,5 +35,8 @@ function draw() {
   } else {
     spr1.setSpeed(0);
   }
+
+  spr2.rotation += 1;
+
   spr1.collide(spr2);
 }
