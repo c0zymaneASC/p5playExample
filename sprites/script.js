@@ -5,6 +5,8 @@ var spr1, spr2;
 
 function setup() {
   var canvas = createCanvas(500, 500);
+  canvas.parent('#container');
+
 }
 
 function draw() {
